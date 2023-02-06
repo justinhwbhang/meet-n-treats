@@ -14,7 +14,7 @@ export default function PostCard(props) {
       <p>{postsData.createdAt}</p>
       {/* Render uploaded image from Cloudinary: */}
       <div className='app-postcard_data-image'>
-        <img id="uploadedimage" src={postsData.postImageURL} width={500}></img>
+        <img className='uploadedimage' src={postsData.postImageURL} width={500}></img>
       </div>
       {/* Render author's name: */}
       <p><span className='username'>{postsData.postAuthor.name}</span> {postsData.postText}</p>
